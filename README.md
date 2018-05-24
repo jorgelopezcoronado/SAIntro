@@ -195,7 +195,7 @@ notation the production rule arrow ($\mapsto$) is replaced by a colon
 ($:$), and each production rule ends with a semicolon.
 
 The production rules can be quite simple, they describe with the tokens
-and non-terminals the grammar, as you know. Pay attention to are the
+and non-terminals the grammar, as you know. Pay attention to the
 actions, whenever a matching rule is found. Generally speaking these
 rules will contain the return types for the object mappings. For
 non-terminals to return something, it should be assigned to the variable
@@ -244,9 +244,9 @@ so.
 Check the rest of the functions, they might help you understand how
 everything works together.
 
-Re-compile all (`make c`, lstinlinemake cpp, lstinlinemake clean; make
-c, etc.) and test new files with the added symbols. """""""" Imagine
-that you need to add another group of symbols `/\\`, I hope you see how
+Re-compile all (`make c`, `make cpp`, `make clean`; `make
+c`, etc.) and test new files with the added symbols. Imagine
+that you need to add another group of symbols `/\`, I hope you see how
 fast this can be added (do not add such symbols).
 
 By this point, I hope you can see how fast it can be to modify grammars
@@ -390,7 +390,7 @@ You have all the tools you need, here are some hints:
 -   The Makefile is the one that controls how to compile. If you add
     different names to your C/CPP/header files, modify the Makefile
     accordingly. There is a lot of documentation on Makefiles on the
-    Internet. It will be great for you to lean this. If not, you can
+    Internet. It will be great for you to learn this. If not, you can
     always ask me how to add files/compile.
 
 -   Remember that `%union` needs to have all the different data types
@@ -436,4 +436,7 @@ calculating precise values, but, abstract symbols that help the static
 analysis is the principle of the widely adopted technique abstract
 interpretation.
 
-P.S. 2. I hope you enjoy this lab! :)
+P.S. 2. You can check other properties, for example, after a value is 
+assigned, it should be later used. Otherwise it just wastes resrouces.
+
+P.S. 3. I hope you enjoy this lab! :)
