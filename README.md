@@ -1,9 +1,9 @@
----
-date: 'May 25, 2018'
-title: 'Laboratory 1 -- Static Analysis: Hands on'
----
+Laboratory 1 -- Static Analysis: Hands on
+=========================================
 
-\maketitle
+May 25, 2018
+------------
+
 The goal of this laboratory is to introduce you to static code analysis.
 In this laboratory, we will be only using the principles learned and
 implementations of your own. Your implementations will be using
