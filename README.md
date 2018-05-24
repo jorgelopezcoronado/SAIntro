@@ -39,7 +39,7 @@ contents of the the 1 are as follows:
 -   Makefile: this is the file that allows you to easily compile your
     source files. Do not modify it unless you know what you're doing
     (still, take a look at it, you might modify a copy of it for the
-    part [3](#register){reference-type="ref" reference="register"})
+    part 3.
 
 -   paren.c: This file contains the implementation of auxiliary
     functions to build the AST for the parenthesis language.
@@ -140,7 +140,7 @@ Now, that you know about lex, probably you know that there are two
 places where you need to add something to extend the language. The
 definition of the new symbols and the associated actions. Do so.
 
-One remark is that the Kleene-star($^{*}$), is denoted as plain$*$, in
+One remark is that the Kleene-star($^{\*}$), is denoted as plain$*$, in
 Lex regular expressions (very common practice), also the $+$ for the
 short notation $^{+}$.
 
