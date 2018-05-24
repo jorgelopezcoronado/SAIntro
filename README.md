@@ -39,7 +39,7 @@ contents of the the 1 are as follows:
 -   Makefile: this is the file that allows you to easily compile your
     source files. Do not modify it unless you know what you're doing
     (still, take a look at it, you might modify a copy of it for the
-    part 3.
+    part 3).
 
 -   paren.c: This file contains the implementation of auxiliary
     functions to build the AST for the parenthesis language.
@@ -50,7 +50,7 @@ contents of the the 1 are as follows:
     createParen)
 
 -   spa: parenthesis language hierarchical printing (based on the AST)
-    executable compiled for the Linux
+    executable compiled for Linux
 
 -   spa.c: The main parenthesis language hierarchical printing
     implementation based on the AST. This file contains functions to
@@ -125,7 +125,7 @@ encounter the proper element, we return the proper token, e.g.,:
     	 {LPAREN} {return TOKEN_LPAREN;}
 
 Please note, that the name of the returned tokens you can choose. Also
-note that, the rules that are conflicting (let's say you
+note that, the rules that are conflicting. let's say you
 define$a=[0-9]$, and $b=0$, the priority is taken by the first rule it
 appears used in the rule section.
 
@@ -133,8 +133,7 @@ The final section is reserved for user code, this is copied directly
 into the lexer and not checked by flex. Later, the compiler can check
 this code. It can be useful for some pre-processing rules replacing
 comments into white spaces, etc. For this lab you will not have to
-define any user code in your Lex files, but you will look at one example
-(later).
+define any user code in your Lex files.
 
 Now, that you know about lex, probably you know that there are two
 places where you need to add something to extend the language. The
@@ -175,8 +174,8 @@ The file parser.y (extension y due to the YACC parser generator), is
 composed of 4 sections: prologue, declarations, rules, and epilogue.
 
 The prologue contains macro definitions and function declarations that
-are later used in the rules. The prologue is enclosed between {`%` and
-`%`}.
+are later used in the rules. The prologue is enclosed between {% and
+%}.
 
 The declarations are specific instructions for handling Bison grammars.
 Perhaps the most important to understand are the
