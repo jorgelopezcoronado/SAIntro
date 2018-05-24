@@ -269,7 +269,7 @@ By the end of this exercise you should feel confident while statically
 analyzing code for simple properties. Let's build a more realistic
 analyzer.
 
-Static Analyzer for a Register Machine Language {#register}
+Static Analyzer for a Register Machine Language 
 ===============================================
 
 The previous exercises of this lab were a warm-up for this section. Any
